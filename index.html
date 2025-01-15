@@ -16,39 +16,33 @@
 <!-- <div id="lunaradio" style="width:100%; height:600px;background: #000000 url(https://i.imgur.com/FJdKneB.jpg) bottom / cover no-repeat;">Cargando ...</div> -->	
 
 <script>
-  $("#lunaradio").lunaradio({
-  userinterface: "big",
-  backgroundcolor: "rgba(0,3,3,0)",
-  fontcolor: "#f1f3f8",
-  hightlightcolor: "#ff4646",
-  fontname: "Anton",
-  googlefont: "Anton&display=swap",
-  fontratio: "0.3",
-  radioname: "Radio Bien de Salud", //nombre de radio
-  scroll: "true",
-  coverimage: "https://i.imgur.com/9lQJQqc.png", //link o ruta de logo radio
-  onlycoverimage: "false", //true para mostrar solo logo radio
-  coverstyle: "animated",
-  usevisualizer: "real",
-  visualizertype: "4",
-  metadatatechnic: "creativo-agencia-metadato",
-  ownmetadataurl: "",
-  usestreamcorsproxy: "false", //true o false
-  corsproxy: "https://cors-anywhere.herokuapp.com/",
-  streamurl: "https://stream-159.zeno.fm/w4e7sgs70feuv?zt=",
-  streamtype: "radiozeno", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
-  icecastmountpoint: "/radio.mp3",
-  shoutcastpath: "/stream",
-  shoutcastid: "",
-  streamsuffix: "",
-  radionomyid: "",
-  radionomyapikey: "",
-  radiozenoid: "61shacyp0xquv",
-  radiojarid: "",
-  radiocoid: "",
-  itunestoken: "1000lIPN",
-  metadatainterval: "20000",
-  volume: "100",
-  debug: "false",
-  });
-</script>
+        $("#player").lunaradio({
+           userinterface: "big",
+	backgroundcolor: "rgba(1,0,0,1)",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#3a96e0",
+	fontname: "Unica One",
+	googlefont: "Unica+One&display=swap",
+	fontratio: "0.4",
+	radioname: "Radio Stereo 100 Fm",
+	scroll: "true",
+	coverimage: "img/logo.png",
+	onlycoverimage: "false",
+	coverstyle: "animated",
+	usevisualizer: "real",
+	visualizertype: "6",
+        itunestoken: "1000lIPN",
+         metadatatechnic: "creativo-agencia-metadato", //fallback (usar para zeno)
+         corsproxy: "",
+         usestreamcorsproxy: "false",
+         streamurl: "https://stream-150.zeno.fm/uv4tmnwk4x7uv?zs=j_XgzXPMS7q79XGuUFhEXQ",
+         streamtype: "zeno", //soporta: zeno, icecast2, shoutcast2
+         idzeno: "uv4tmnwk4x7uv",
+         icecastmountpoint: "/radio.mp3",
+         shoutcastpath: "/stream",
+         shoutcastid: "1",
+         metadatainterval: "26000",
+	volume: "100",
+	autoplay: "true",
+	debug: "false",
+	usestreamcorsproxy: "false",
